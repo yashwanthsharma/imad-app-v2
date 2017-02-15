@@ -18,7 +18,7 @@ var articles = {
  }, 
  'article-three' :{
      title: 'article-three yash!',
-       heading:'ARTICLE-TWO',
+       heading:'ARTICLE-THREE',
        content:'This is my third article'
  }
        
