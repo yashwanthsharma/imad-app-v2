@@ -30,7 +30,7 @@ function createTemplate (data) {
          var htmlTemplate = `
          <html>
     <head>
-        <title>Article-one yash!</title>
+        <title>${title}</title>
          <meta name ="viewport" content ="width=device-width, initial-scale-1" />
          <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -40,10 +40,10 @@ function createTemplate (data) {
               <a href="/">Home</a>
             </div>
               <hr/>
-              <h1>ARTICLE-ONE</h1>
+              <h1>${heading}</h1>
               <div>
                  <p>
-                    <i>This is my 1st Article</i>
+                    <i>${content}</i>
                  </p>
               </div>    
         </div>
