@@ -2,8 +2,8 @@ console.log('Loaded!');
 var element= document.getElementById('main-text');
 
 element.innerHTML='New Value';
-var img = document.getElementById('img');
-img.onclick = function()
+var img = document.getElementById('yash');
+yash.onclick = function()
 {
-    img.style.marginLeft='100px';
+    yash.style.marginLeft='100px';
 }
