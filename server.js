@@ -12,19 +12,19 @@ var articles = {
        content:'This is my first article'
  },   
  'article-two' :{
-     title: 'article-two yash!',
+       title: 'article-two yash!',
        heading:'ARTICLE-TWO',
        content:'This is my second article'
  }, 
  'article-three' :{
-     title: 'article-three yash!',
+       title: 'article-three yash!',
        heading:'ARTICLE-THREE',
        content:'This is my third article'
  }
        
 };
 function createTemplate (data) {
-    var title = data.title;
+    var title   = data.title;
     var heading = data.heading;
     var content = data.content;
          var htmlTemplate = `
