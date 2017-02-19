@@ -6,4 +6,4 @@ var img = document.getElementById('yash');
 img.onclick = function()
 {
     img.style.marginLeft='100px';
-}
+};
