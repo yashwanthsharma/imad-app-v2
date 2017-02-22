@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var element= document.getElementById('main-text');
 
-element.innerHTML='New Value by Yash';
+
 var img = document.getElementById('yash');
 var marginLeft = 0;
 function moveRight (){
