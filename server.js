@@ -9,19 +9,27 @@ var articles = {
  'article-one' :{
        title:'article-one yash!',
        heading:'ARTICLE-ONE',
-       content:'This is my first article'
+       content:`
+          <p>
+              This is my first article
+          </p>`      
  },   
  'article-two' :{
        title: 'article-two yash!',
        heading:'ARTICLE-TWO',
-       content:'This is my second article'
+       content:`
+          <p>
+             This is my second article
+          </p>`
  }, 
  'article-three' :{
        title: 'article-three yash!',
        heading:'ARTICLE-THREE',
-       content:'This is my third article'
- }
-       
+       content:`
+           <p>
+             This is my third article
+           </p>`
+ }      
 };
 function createTemplate (data) {
     var title   = data.title;
@@ -30,7 +38,9 @@ function createTemplate (data) {
          var htmlTemplate = `
          <html>
     <head>
-        <title>${title}</title>
+        <title>
+              ${title}
+        </title>
          <meta name ="viewport" content ="width=device-width, initial-scale-1" />
          <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -43,7 +53,7 @@ function createTemplate (data) {
               <h1>${heading}</h1>
               <div>
                  <p>
-                    <i>${content}</i>
+                    ${content}
                  </p>
               </div>    
         </div>
