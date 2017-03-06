@@ -9,7 +9,7 @@ var config = {
   database: 'yashwanthsharma',
   host:'db.imad.hasura-app.io',
   port:'5432',
-  password: process.env.DB_yashwanthsharma_59517
+  password: process.env.db_yashwanthsharma_59517
 
  };
 
