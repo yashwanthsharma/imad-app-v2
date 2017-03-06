@@ -7,7 +7,7 @@ var config = {
   
   user: 'yashwanthsharma',
   database: 'yashwanthsharma',
-  host:'db.imad.hasura-app.io',
+  host:'http://db.imad.hasura-app.io',
   port:'5432',
   password:process.env.DB_PASSWORD
 
@@ -79,7 +79,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var pool = new Pool(config);
+var Pool = new Pool(config);
 app.get('/test-db', function (req, res) {
     pool.query('SELECT * FROM test',function (err, result) {
        if(err){
