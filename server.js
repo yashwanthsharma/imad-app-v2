@@ -76,6 +76,11 @@ function createTemplate (data) {
 }
 
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
     pool.query('SELECT * FROM test',function (err, result) {
@@ -89,11 +94,6 @@ app.get('/test-db', function (req, res) {
 });
 
 });
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
 
 var counter = 0;
 app.get('/counter',function(req, res){
